@@ -1,0 +1,31 @@
+class 
+            Employee 
+            AhdEmp 
+
+variable
+            salary
+            maxSalary     
+
+        const -> 
+                MIN_BAL 
+                SIZE 
+
+method 
+        add()
+        addEmp()
+        addTempEmp()        
+
+object 
+        same as variable 
+
+----------------------------------------------------------------------------------
+
+constructor :-  is a special method which has a same name as a class name 
+                and it must not have any return type. 
+                is used to initialize instance variable 
+
+there are two type of constructor  
+    1) implicit  -> when u dnt create any constructor u will get implicit default constructor 
+    2) explicit  -> 1) default no argument 2) parameterized argument constructor 
+
+    
