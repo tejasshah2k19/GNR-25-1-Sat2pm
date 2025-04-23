@@ -30,6 +30,7 @@ public class Bank {
         
         //how to create object? 
 
+        java.util.Scanner scr=  null;
         Bank obj = new Bank(); 
         obj.getData();
         obj.printData();
