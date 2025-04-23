@@ -1,0 +1,415 @@
+class 
+            Employee 
+            AhdEmp 
+
+variable
+            salary
+            maxSalary     
+
+        const -> 
+                MIN_BAL 
+                SIZE 
+
+method 
+        add()
+        addEmp()
+        addTempEmp()        
+
+object 
+        same as variable 
+
+----------------------------------------------------------------------------------
+
+constructor :-  is a special method which has a same name as a class name 
+                and it must not have any return type. 
+                is used to initialize instance variable 
+
+there are two type of constructor  
+    1) implicit  -> when u dnt create any constructor u will get implicit default constructor 
+    2) explicit  -> 1) default no argument 2) parameterized argument constructor 
+
+    
+close()
+
+
+obj  =null; //GC 
+
+System.gc(); 
+
+System class 
+gc     method 
+
+------------------------------------------------------------------------------------------
+
+io -> resource -> free -> close()
+memory -> object = null 
+        System.gc();
+
+         
+------------------------------------------------------------------------------------------
+A real estate firm that lists property for sale. 
+The following describes the organization:
+The firm has a number of sales offices in several states.
+Each sales office is assigned one or more employees. An employee must be assigned to only one sales office.
+For each sales office, there is always one employee assigned to manage that office. 
+An employee may manage only one sales office to which he/she is assigned.
+The firm (sales office) lists property for sale.
+Each unit of property must be listed with one (and only one) of the sales offices. 
+A sales office may have any number of properties listed, or may have no properties listed.
+Each unit of property has one or more owners. An owner may have one or more units of property.
+
+
+class** : Firm , Property , SalesOffice , Employee , Owner 
+variable : 
+method :  addProperty() sale() 
+
+PPT -> Person Place Thing 
+
+
+-----------------------------------------------------------------------------------------
+public class Employee {
+    String name;
+    int employeeId;
+    double salary;
+    static String companyName;
+
+    public Employee(String name, int employeeId, double salary) {
+        this.name = name;
+        this.employeeId = employeeId;
+        this.salary = salary;
+    }
+
+    public void displayDetails() {
+        System.out.println("Name: " + name);
+        System.out.println("Employee ID: " + employeeId);
+        System.out.println("Salary: " + salary);
+        System.out.println("Company: " + companyName);
+        System.out.println("----------------------------");
+    }
+
+    public static void main(String[] args) {
+        companyName = "Tech Innovators Pvt Ltd";
+
+        Employee emp1 = new Employee("Alice", 101, 50000);
+        Employee emp2 = new Employee("Bob", 102, 60000);
+        Employee emp3 = new Employee("Charlie", 103, 55000);
+
+        emp1.displayDetails();
+        emp2.displayDetails();
+        emp3.displayDetails();
+    }
+}
+------------------------------------------------------------------------------------------
+
+Create a class called Laptop with brand, model number, and price as instance variables.
+Use a static variable for a common discount rate.
+Write a constructor to set values and a method to calculate final price after applying the discount.
+Test the class by creating at least 2 laptop objects.
+
+-------------------------------------------------------------------------------------------
+
+The university has several departments like Computer Science, Mathematics, and Physics.
+
+Each department offers multiple courses, but each course belongs to only one department.
+
+Each course is taught by a faculty member, and one faculty member can teach multiple courses.
+
+Students register for courses. A student can register for many courses, and each course can have many students enrolled.
+
+Every student has a unique roll number, name, and department.
+
+Each faculty member also belongs to a department and has a unique ID, name, and designation.
+
+---------------------------------------------------------------------------------------------
+A hospital maintains information about its departments, doctors, and patients.
+
+The hospital has multiple departments (like Cardiology, Neurology, etc.).
+
+Each department has several doctors assigned, but a doctor belongs to only one department.
+
+A doctor can treat multiple patients, and each patient can be treated by multiple doctors.
+
+Every patient has a patient ID, name, and admission date.
+
+Every doctor has a doctor ID, name, and specialization.
+
+
+-----------------------------------------------------------------------------------------------
+An e-commerce company manages products, customers, and orders.
+
+The platform offers many products across various categories.
+
+Each product has a unique ID, name, price, and belongs to one category.
+
+A customer can place many orders, but an order belongs to only one customer.
+
+Each order can contain multiple products, and each product can appear in many orders.
+
+Every customer has an ID, name, email, and contact number.
+
+The system keeps a static variable to count the total number of orders placed.
+
+-----------------------------------------------------------------------------------------------
+ 
+java.util.Scanner ->  java folder -> util folder -> Scanner.java  {package java.util; }
+
+import java.util.Scanner; 
+
+
+import Scanner; 
+
+class java.util.Scanner{
+
+}
+java 
+    util
+        Scanner.java 
+        MyCalc.java -> Scanner 
+
+
+class Scanner{
+
+}
+
+java api --> Math 
+
+java.lang -> 
+
+why? 
+
+
+Math.round() ; 
+all the methods are static 
+
+
+Math obj = new Math(); //not works -> bcz constructor is private 
+
+-----------------------------------------------------------------------------------------------
+
+
+private -> property { method , variable }
+
+
+class   : default , public , {yes: if its inner class }
+methods : private , default , protected , public 
+variables : private , default , protected , public
+
+
+private , default , protected , public 
+
+-----------------------------------------------------------------------------------------------
+
+
+
+final 
+
+final->variable 
+final->class
+final->method
+
+
+
+final class A{
+
+}
+
+class A{
+
+	final void add(){
+	
+	}
+}
+
+class A{
+	//constant --> fix 
+	final int X=10; //variable fix -> modify -> {memory}
+}
+
+
+
+
+-----method overloading ---> 
+
+add(10,20); 
+
+class A{
+
+
+
+	int add(int x,int y,double d){
+	
+		return 0;
+	} 
+	
+	void add(int a,int b){
+	
+	
+	}
+
+	void add(int a,int b,int c){
+	
+	
+	}
+
+
+	void add(int a,int b,int c,int d){
+	
+	
+	}
+	
+
+}
+add -> no return 
+add -> argument -> int,int
+
+add(10,20);
+add(10,20,30);
+add(10,20,30,40);
+
+
+
+
+
+over riding----------->
+
+
+
+class GathiyaRath{
+
+	void saleGathiya(){
+	
+	}
+}
+
+class LaxmiGathiyaRath extends GathiyaRath {
+
+	void saleGathiya(){
+	
+	}
+	
+	
+
+}
+
+------------------------------------------------------------
+
+
+
+
+class GathiyaRath{
+
+	void saleGathiya(){
+	
+	}
+}
+
+class LaxmiGathiyaRath extends GathiyaRath {
+	
+ 
+	void saleGathiya(int k){
+	
+	}
+}
+
+//error : no error 
+	//compiltime
+	//runtime
+
+
+//overriding -> No
+//overloading -> Yes 
+	
+--------------------------------------------------------------------------------------------------
+
+
+class GathiyaRath{
+
+	final  void saleGathiya(){
+	
+	}
+}
+
+class LaxmiGathiyaRath extends GathiyaRath {
+
+	//error 
+	//void saleGathiya(){
+	
+	//}
+
+	void saleFafadaGa(){
+	
+	}
+
+	void saleGathiya(int j){
+	
+	}
+
+}
+----------------------------------------------------------------------------
+
+
+
+final class GathiyaRath{
+
+	void saleGathiya(){
+	
+	}
+}
+//error 
+class LaxmiGathiyaRath extends GathiyaRath {
+	
+ 
+	 
+}
+
+----------------------------------------------------
+
+final -> class -> no inheritance 
+final -> method -> no override 
+final -> variable -> fix , constant - value 
+
+
+----------------------------------------------------
+strictfp 
+----------------------------------------------------
+
+final ,static , strictfp , 
+volatile , synch , 
+abstract 
+transient 
+-----------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
