@@ -444,6 +444,46 @@ User can identified by mobile number.
 
 ---------------------------------------------------------------------
 
+Royal education wants to hire three types of faculty in their org. 
+part time
+full time
+and contract based. 
+
+every faculty has to login into system when they take session ,
+faculty can login using email and password.
+faculty will get payment based on their employeement type. 
+part time employee get weeklySalary 
+full time employee get monthlySalary 
+contract based employee get qtr payout. 
+
+every faculty will get salary based on their total working hours.
+and each faculty having their own hourly rate. 
+
+------------------------------------------------------------------------
+class , variable , method : logic 
+
+
+Company 
+Faculty 
+	String name; 
+	int hourlRate; 
+	int salary; 
+	
+PartTimeFaculty extends Faculty
+	void countSalary(){
+	}
+ 
+FT  extends Faculty 
+	void countSalary(){
+	}
+ 
+CT  extends Faculty 
+	void countSalary(){
+	}
+ 
+
+PartTime ram = new PartTime();
+
 
 
 
