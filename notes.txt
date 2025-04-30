@@ -540,11 +540,24 @@ Create a class student with data members to store rollNum, name of student, mark
  max , min marks  and obtained marks. 
  Create an object of the student. 
  Provide facilities to input data for the data members and display the results of the student.
+
+ now add  variable that holds percentage and grade of a student
+ grading criteria : 
+ 			90+ A 
+ 			75+ B
+ 			35+ C
+ 			below 35 F 
+ 			
+ also add gender for the student. 
+ 
+ now create two objects and check it works for both or not. 			
  
 ----------------------------------------------------------------------------------------------------------
   
+Ram		55		55		55		55		55		165
+Laxman	45		55		65		65		45		165 
 
-
+----------------------------------------------------------------------------------------------------------
 
 
 
