@@ -570,14 +570,44 @@ student[0].getData();
 
 ----------------------------------------------------------------------------------------------------------
 
+Remove input of rollNum and provide a constructor that assigns rollNum in increasing order.
+
+
 1.1	Add Student [ MAX 10 Students ]  . 
 1.2 List All Student 
 1.3 Search students by name. 
 1.4	List all students in descending order of obtained marks 
-1.5	Remove input of rollNum and provide a constructor that assigns rollNum in increasing order.
 
 ----------------------------------------------------------------------------------------------------------
 
+
+1.	Login
+2.	Exit 
+
+
+Student -> MONITOR {current:all menus} , NORMAL{list}  
+							
+
+email
+password
+role
+
+default -> 1 student -> MONITOR
+
+1. Login	
+	email
+	rock@gmail.com
+	
+	password
+	rock 
+	
+	if email and password match and role is monitor -> 
+						access all menu
+							add student [ email , password ] 	
+							Logout add  
+	if email and password match and role is normal -> 
+						1 List 
+						2 Logout 
  
 
 
