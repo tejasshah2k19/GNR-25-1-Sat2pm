@@ -6,20 +6,50 @@ public class StudentApp {
 
 	public static void main(String[] args) {
 
-		Student ram = null;
-		Student laxman = null;
+//		Student ram = null;
+//		Student laxman = null;
 
+		Student student[] = new Student[10];
 		Scanner scr = new Scanner(System.in);
+		int studentCounter = 0;
+		while (true) {
+			System.out.println("\n0 For EXIT");
+			System.out.println("1 For Add  Student");
+			System.out.println("2 For List Student");
+			System.out.println("Enter choice");
 
-		System.out.println("Enter name and marks of three subjects");
-		String name = scr.next();
-		int maths = scr.nextInt();
-		int sci = scr.nextInt();
-		int eng = scr.nextInt();
+			int choice = scr.nextInt();
 
-	}
+			switch (choice) {
+			case 1:
+				// add student
+				System.out.println("Enter name and marks of three subjects");
+				String name = scr.next();
+				int maths = scr.nextInt();
+				int sci = scr.nextInt();
+				int eng = scr.nextInt();
 
-}
+				student[studentCounter] = new Student(name, maths, sci, eng);
+				studentCounter++;
+				break;
+			case 2:
+				// list student
+				for(int i=0;i<studentCounter;i++) {
+					student[i].displayStudentData();
+				}
+				break;
+			case 0:
+				System.exit(0);
+
+			default:
+				System.out.println("Enter Valid Choice...");
+				break;
+			}// switch
+		} // while
+
+	}// main
+
+}// StudentApp
 
 class Student {
 
@@ -124,7 +154,7 @@ class Student {
 	}
 
 	void displayStudentData() {
-		System.out.println(name + " " + maths + " " + sci + " " + eng);
+		System.out.printf("\n%-10s %3d %3d %3d",name,maths,sci,eng);
 
 	}
 
