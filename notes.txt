@@ -603,7 +603,7 @@ default -> 1 student -> MONITOR
 	
 	if email and password match and role is monitor -> 
 						access all menu
-							add student [ email , password ] 	
+							add student [ email , password , role:] 	
 							Logout add  
 	if email and password match and role is normal -> 
 						1 List 
@@ -612,7 +612,35 @@ default -> 1 student -> MONITOR
 
 
 
+----------------------------------------------------------------------------------------------------------
 
+string -> more than 1 character -> collection of character 
+char -> single character 
+char[] ->
+string 
+
+
+char -> single quote 
+string -> double quote 
+
+java -> String class -> more than 1 character 
+
+
+int a; 
+a = 10; 
+
+
+String str; 
+str = "royal";
+
+char[]  => 0 
+single character -> 
+str => 0th index
+
+str[0];
+
+ 
+ 
 
 
 
