@@ -641,13 +641,21 @@ str[0];
 
  
  
+1) take string from user and count total vowels. 
+2) take string from and user and word from user and count how many times give word is present in a string. 
+		e.g str => jony jony yes papa 
+		    word => jony 
+			ans => 2 
+3) Take 1 string from user and convert all the first character in capital.
+	str -> my name Is Khan and i am not joker. 
+	ans -> My Name Is Khan And I Am Not Joker 
 
+--------------------------------------------------------------------------------------------
 
-
-
-
-
-
+4) input  : my name Is Khan and i aM Not joker
+   output : MY NAME iS kHAN AND I Am nOT JOKER 
+--------------------------------------------------------------------------------------------
+ 
 
 
 
