@@ -658,13 +658,60 @@ str[0];
  
 
 
+String -> immutable -> 
 
+		StringBuffer 
+		StringBuilder 
+		
+		
+		
+		StringBuffer sb = new StringBuffer("royal");
+		 
+---------------------------------------------------------------------------------------
+polymorphism -> 
+
+		compile time 			runtime 
+		
+		
+		method overloading  
+
+		method orverriding 
+----------------------------------------------------------------------------------------				
+
+polymorphic object 
 				
 
+static import 
+
+
+enum --> 
+		constant variable-->final 
+		  	
+----------------------------------------------------------------------------------------				
+
+Portfolio management :- 
+
+
+current price -> 
+
+
+1	RIL				1450	
+2	TATA MOTORS		750
+3	JSW 			1050
+4	TVTODAY			150
+5	HAL				5500
+6	DMART			4500
+ 
 
 
 
 
+
+
+
+
+
+	
 
 
 

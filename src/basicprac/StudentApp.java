@@ -10,41 +10,113 @@ public class StudentApp {
 //		Student laxman = null;
 
 		Student student[] = new Student[10];
+
 		Scanner scr = new Scanner(System.in);
 		int studentCounter = 0;
+
+		student[studentCounter] = new Student("Ram", 50, 50, 50, "ram@gmail.com", "ram", "MONITOR");
+		studentCounter++;
+
 		while (true) {
-			System.out.println("\n0 For EXIT");
-			System.out.println("1 For Add  Student");
-			System.out.println("2 For List Student");
-			System.out.println("Enter choice");
+			System.out.println("1 For Login\n2 For Exit");
+			int mainChoice = scr.nextInt();
 
-			int choice = scr.nextInt();
-
-			switch (choice) {
+			switch (mainChoice) {
 			case 1:
-				// add student
-				System.out.println("Enter name and marks of three subjects");
-				String name = scr.next();
-				int maths = scr.nextInt();
-				int sci = scr.nextInt();
-				int eng = scr.nextInt();
+				System.out.println("Login");
+				System.out.println("Enter Email and Password for Login : ");
+				String loginEmail = scr.next();
+				String loginPassword = scr.next();
+				boolean found = false;
 
-				student[studentCounter] = new Student(name, maths, sci, eng);
-				studentCounter++;
-				break;
-			case 2:
-				// list student
-				for(int i=0;i<studentCounter;i++) {
-					student[i].displayStudentData();
+				login: for (int i = 0; i < studentCounter; i++) {
+					if (student[i].getEmail().equalsIgnoreCase(loginEmail)
+							&& student[i].getPassword().equals(loginPassword)) {
+						found = true;
+						//
+						if (student[i].getRole().equals("MONITOR")) {
+							// monitor menu
+
+							while (true) {
+
+								System.out.println("1 For Add  Student");
+								System.out.println("2 For List Student");
+								System.out.println("3 For Logout");
+								System.out.println("Enter choice");
+
+								int choice = scr.nextInt();
+
+								switch (choice) {
+								case 1:
+									// add student
+									System.out.println("Enter name and marks of three subjects");
+									String name = scr.next();
+									int maths = scr.nextInt();
+									int sci = scr.nextInt();
+									int eng = scr.nextInt();
+									System.out.println("Enter Email - Password and Role ");
+									String email = scr.next();
+									String password = scr.next();
+									String role = scr.next();
+
+									student[studentCounter] = new Student(name, maths, sci, eng, email, password, role);
+									studentCounter++;// 1
+									break;
+								case 2:
+									// list student
+									for (i = 0; i < studentCounter; i++) {
+										student[i].displayStudentData();
+									}
+									break;
+								case 3:
+									break login;
+
+								default:
+									System.out.println("Enter Valid Choice...");
+									break;
+								}// switch
+							} // while
+						} // if --monitor
+						else {
+
+							while (true) {
+								System.out.println("1 For List Student");
+								System.out.println("2 For Logout");
+								System.out.println("Enter choice");
+
+								int choice = scr.nextInt();
+
+								switch (choice) {
+								case 1:
+									// list student
+									for (i = 0; i < studentCounter; i++) {
+										student[i].displayStudentData();
+									}
+									break;
+								case 2:
+									break login;
+
+								default:
+									System.out.println("Enter Valid Choice...");
+									break;
+								}// switch - normal student
+							} // while - normal
+						} // else monitor
+					} // main if email password
+				} // for loop for login
+
+				if (found == false) {
+					System.out.println("Invalid Credentials.....");
 				}
 				break;
-			case 0:
+			case 2:
+				System.out.println("Thank you for using our service!!!");
 				System.exit(0);
-
 			default:
-				System.out.println("Enter Valid Choice...");
+				System.out.println("Invalid Choice");
 				break;
-			}// switch
+			}
+
 		} // while
 
 	}// main
@@ -58,6 +130,10 @@ class Student {
 	private int obtainedMarks;
 	private int maxMark;
 	private int minMark;
+
+	private String email;
+	private String password;
+	private String role;
 
 	public String getName() {
 		return name;
@@ -115,16 +191,45 @@ class Student {
 		this.minMark = minMark;
 	}
 
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getRole() {
+		return role;
+	}
+
+	public void setRole(String role) {
+		this.role = role;
+	}
+
 	public Student() {
 		//
 
 	}
 
-	Student(String name, int maths, int sci, int eng) {
+	Student(String name, int maths, int sci, int eng, String email, String password, String role) {
 		this.name = name;
 		this.maths = maths;
 		this.sci = sci;
 		this.eng = eng;
+
+		this.email = email;
+		this.password = password;
+		this.role = role;
+
 		this.calculateResult();
 	}
 
@@ -154,7 +259,7 @@ class Student {
 	}
 
 	void displayStudentData() {
-		System.out.printf("\n%-10s %3d %3d %3d",name,maths,sci,eng);
+		System.out.printf("\n%-10s %3d %3d %3d", name, maths, sci, eng);
 
 	}
 
