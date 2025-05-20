@@ -2,8 +2,9 @@ package pmt;
 
 public class Stock {
 
-	private String name;
-	private Float currentPrice;
+	private String name;//RIL
+	private Float currentPrice;//1450
+	
 
 	public String getName() {
 		return name;
@@ -19,6 +20,10 @@ public class Stock {
 
 	public void setCurrentPrice(Float currentPrice) {
 		this.currentPrice = currentPrice;
+	}
+
+	public void display() {
+		System.out.printf("\n%-10s %-5f",name,currentPrice);
 	}
 
 }
