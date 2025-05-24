@@ -701,13 +701,49 @@ current price ->
 4	TVTODAY			150
 5	HAL				5500
 6	DMART			4500
- 
+
+----------------------------------------------------------------------------------------				
+ cohesive -> class-> code -> 
+ package  -> structure ->  
 
 
+-----------------------------------------------------------------------------------------------
+
+exception --> 
+
+	error ---> 
+				1) compiletime error { .class } {java compiler}
+				2) runtime error {.class -> run } {crash} {logic,memroy,security,io......} 
+
+	runtime error => exception => 
+	
+	
+	handle? 
+	
+	try
+	hit 
+	throw
+	catch 
 
 
+	try{
+	
+	}catch(){
+	
+	}
+	
 
+------------------------------------------------------------------------------------------------
 
+5 array -> 
+	sort 
+	user input 
+	sort 
+	display 
+	
+runtime error -> 
+
+------------------------------------------------------------------------------------------------
 
 
 

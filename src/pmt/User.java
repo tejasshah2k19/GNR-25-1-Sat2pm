@@ -39,4 +39,13 @@ public class User {
 		this.role = role;
 	}
 
+	public static User createUser(String firstName, String email, String password, String role) {
+		User user = new User();
+		user.setFirstName(firstName);
+		user.setEmail(email);
+		user.setPassword(password);
+		user.setRole(role);
+		return user;
+	}
+
 }
