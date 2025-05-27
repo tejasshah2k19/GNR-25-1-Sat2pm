@@ -23,9 +23,17 @@ public class ExceptionDemo {
 			System.out.println("Please Enter only whole number");
 		} catch (Exception e) {
 			System.out.println("Something went wrong please try aftersometime.........");
-
 //			sendMailToDeveloper(email,e);
 			e.printStackTrace();
+		}finally {
+			System.out.println("I am always execute....");
 		}
+		
+		//try->catch 
+		//try->finally 
+		//try->catch->finally 
+		
+		
+		
 	}
 }

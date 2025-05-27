@@ -745,6 +745,44 @@ runtime error ->
 
 ------------------------------------------------------------------------------------------------
 
+try
+catch 
+finally
+throw  
+throws 
+Throwable 
+
+throw vs throws vs Throwable 
+
+finally -> exception | no exception -> execute -> 
+			it always execute 
+			gc 
+			db connection -> close 
+			api -> close 
+			allocation -> free 
+			
+	2 type -> 
+	
+	checked exception --> try catch ->compiletime error 
+	unchecked exception --> try catch not mandatory
+	
+	Arithmatic-> uncheck 
+	Nullpointer ->uncheck 
+	ArrayIndex -> uncheck 
+	
+	FileNot -> check 
+	IoExce -> check
+	Sql  -> check
+	
+			
+------------------------------------------------------------------------------------------------
+
+
+java 7 exception -> 
+
+gc -> 
+
+AutoCloseable 
 
 
 	
