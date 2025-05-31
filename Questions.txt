@@ -1,0 +1,146 @@
+*************************ch4*******************************************
+class Feline {
+	public static void main(String[] args) {
+		long x = 42L;
+	    long y = 44L;	
+        System.out.print(" " + 7 + 2 + " ");//" 72 " 
+        System.out.print(foo() + x + 5 + " ");//"foo425 "
+        System.out.println(x + y + foo());
+    }
+    static String foo() { return "foo"; }
+}
+
+What is the result?
+A. 9 foo47 86foo
+B. 9 foo47 4244foo
+C. 9 foo425 86foo
+D. 9 foo425 4244foo
+E. 72 foo47 86foo
+
+-----------------------------------------------------------------------
+
+public class Cowboys {
+ public static void main(String[] args) {
+    int x = 12;
+    int a = 5;
+    int b = 7;
+    System.out.println(x/a + " " + x/b);//2  1
+ }
+}
+----------------------------------------------------------------------
+
+3. public class McGee {
+4. public static void main(String[] args) {
+5. Days d1 = Days.TH;
+6. Days d2 = Days.M;
+7. for(Days d: Days.values()) {
+8. if(d.equals(Days.F)) break;
+9. d2 = d;//M T W TH 
+10. }
+11. System.out.println((d1 == d2)?"same old" : "newly new");
+12. }
+13. enum Days {M, T, W, TH, F, SA, SU};
+14. }
+What is the result?
+A. same old
+B. newly new
+C. Compilation fails due to multiple errors
+D. Compilation fails due only to an error on line 7
+E. Compilation fails due only to an error on line 8
+F. Compilation fails due only to an error on line 11
+G. Compilation fails due only to an error on line 13
+
+----------------------------------------------------------------------
+
+Given:
+4. public class SpecialOps {
+5. public static void main(String[] args) {
+6. String s = "";//y
+7. boolean b1 = true;
+8. boolean b2 = false;
+9. if((b2 = false) | (21%5) > 2) s += "x";
+10. if(b1 || (b2 == true)) s += "y";
+11. if(b2 == true) s += "z";
+12. System.out.println(s);
+13. }
+14. }
+Which are true? (Choose all that apply.)
+A. Compilation fails
+B. x will be included in the output
+C. y will be included in the output
+D. z will be included in the output
+E. An exception is thrown at runtimeerror 
+--------------------------------------------------------------------------
+int a = 5;  // Binary: 0101
+int b = 3;  // Binary: 0011
+int result = a ^ b; // Binary: 0110
+System.out.println(result); // Output: 6
+
+Given:
+3. public class Spock {
+4. public static void main(String[] args) {
+5. int mask = 0;//2
+6. int count = 0;
+7. if( ((5<7) || (++count < 10)) | mask++ < 10 ) mask = mask + 1;
+8. if( (6 > 8) ^ false) mask = mask + 10;
+9. if( !(mask > 1) && ++count > 1) mask = mask + 100;
+10. System.out.println(mask + " " + count);
+11. }
+12. }
+Which two are true about the value of mask and the value of count at line 10? (Choose two.)
+A. mask is 0
+B. mask is 1
+C. mask is 2
+D. mask is 10
+E. mask is greater than 10
+F. count is 0
+G. count is greater than 0
+
+-------------------------------------------------------------------------------
+Given:
+3. interface Vessel { }
+4. interface Toy { }
+5. class Boat implements Vessel { }
+6. class Speedboat extends Boat implements Toy { }
+7. public class Tree {
+8. public static void main(String[] args) {
+9. String s = "0";//012
+10. Boat b = new Boat();
+11. Boat b2 = new Speedboat();
+12. Speedboat s2 = new Speedboat();
+13. if((b instanceof Vessel) && (b2 instanceof Toy)) s += "1";
+14. if((s2 instanceof Vessel) && (s2 instanceof Toy)) s += "2";
+15. System.out.println(s);//012
+16. }
+17. }
+What is the result?
+A. 0
+B. 01
+C. 02
+D. 012
+E. Compilation fails
+F. An exception is throw at runtime 
+---------------------------------------------------------------------------------
+**************************************ch3**********************************************
+public class Fishing {
+byte b1 = 4;
+int i1 = 123456;
+long L1 = (long)i1; // line A
+short s2 = (short)i1; // line B
+byte b2 = (byte)i1; // line C
+int i2 = (int)123.456; // line D
+byte b3 = b1 + 7; // line E // int 
+
+
+byte b3 = 11  ; 
+}
+Which lines WILL NOT compile? (Choose all that apply.)
+A. Line A
+B. Line B
+C. Line C
+D. Line D
+E. Line E
+---------------------------------------------------------------------------------
+
+
+

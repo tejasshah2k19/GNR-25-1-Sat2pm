@@ -198,3 +198,9 @@ variables : private , default , protected , public
 private , default , protected , public 
 
 -----------------------------------------------------------------------------------------------
+abstraction -> hide bg -> feature  
+
+abstract -->
+
+
+
