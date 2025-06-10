@@ -49,6 +49,7 @@ public class StudentApp {
 								switch (choice) {
 								case 1:
 									// add student
+									int oldCounter = studentCounter;	
 									System.out.println("Enter name and marks of three subjects");
 									String name = scr.next();
 									int maths = scr.nextInt();
@@ -61,6 +62,8 @@ public class StudentApp {
 
 									student[studentCounter] = new Student(name, maths, sci, eng, email, password, role);
 									studentCounter++;// 1
+
+									assert(studentCounter == oldCounter+1);
 									break;
 								case 2:
 									// list student

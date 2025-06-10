@@ -785,10 +785,65 @@ gc ->
 AutoCloseable 
 
 
+------------------------------------------------------------------------------------------------
+init block 
+class A { 
+
+	{
 	
+	}
 
 
+	static{
+	
+	}
 
+	{
+	
+	
+	}
+	
+	static {
+	
+	}
+	
+	A(){
+	
+	}
+
+	main(){
+	}	
+}
+
+	
+------------------------------------------------------------------------------------------------
+	
+	collection -> 
+	
+	ArrayList 
+	
+	
+	array -> 
+	
+		int a[] = new int[6]; 
+	
+		2 -> 4--
+		10 -> 4++
+
+	ArrayList : dynamic Array ==> 
+			
+					add -> add -> add -> grow 
+					remove -> remove -> shrink 
+					elements using index 
+					
+					add 10 : 0th index 
+					add 20 : 1st 
+					add 30 : 2nd 
+					add 40 : 3rd 
+	
+	import ->  util 
+------------------------------------------------------------------
+		
 
 
 
