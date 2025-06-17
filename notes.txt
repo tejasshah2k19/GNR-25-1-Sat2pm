@@ -744,7 +744,17 @@ exception -->
 runtime error -> 
 
 ------------------------------------------------------------------------------------------------
-
+									Object
+									
+									Throwable
+		
+		
+		
+	Error							Exception 
+			RuntimeException						IOException
+			   ArithmeticException					Filenot
+			   Input
+			   
 try
 catch 
 finally
@@ -774,7 +784,17 @@ finally -> exception | no exception -> execute ->
 	IoExce -> check
 	Sql  -> check
 	
-			
+	try X
+	try--catch
+	try--finally
+	try-atch-finally
+	
+	
+	custom	exception - user define
+	
+	1) class NegNumException
+	2) extends Exception | RuntimeException
+	3) parent class constructor call-msg** 	
 ------------------------------------------------------------------------------------------------
 
 
@@ -907,13 +927,51 @@ contact app
 	cage 
 	contact removed 
 	
+------------------------------------------------------------------------------------------
+
+
+
+dev server -> db dummy -> user -> client 
+bank -> database -> 
+2023->2024 -> 2025
+ 	file_2022.bak 
+
+5 year -> 
+
+
+GST -> db->  2025 -> qtr -> dump->3  : 2 
+	file -> backup -> dump -> 
 	
+tejas -> sdfjkldsfjlkdsf  draft ? ? 
+
+exam -> submit -> 
+
+--------------------------------------------------------------------------------------------
+
+java.io
+java.nio 
+
+File -> create , remove , rename , totalSize , read only ? ,executable? 
+			path , hidden? , exists ? 
+			
+-------------------------------------------------------------------------------------
 
 
+Question : take folder name from user , create that folder in current directory 
+				now take 2 file name from user and create that in above directory. 
+			now ask user to which file they want to delete. 
+			 
+-------------------------------------------------------------------------------------
 
 
+FileWriter 
+FileReader 
 
+Question : take two string from user and write in to file. 
+			now read back and print both are same or not. 
 
+-------------------------------------------------------------------------------------
+			
 
 
 
