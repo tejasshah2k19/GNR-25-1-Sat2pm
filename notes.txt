@@ -973,12 +973,133 @@ Question : take two string from user and write in to file.
 -------------------------------------------------------------------------------------
 			
 
+FileReader -> multiple data read 
+
+BufferedReader -> line by line 
+
+
+1) take 5 names from user and store into a file. [name.txt] 
+   for -> 5 time -> enter name , input -> name.txt save -> 
+2) read data from name.txt and print it on console if first character is vowel 
+ 
+
+--------------------------------------------------------------------------------------
+3) take 10 numbers from the user 
+		store into num.txt 
+   now read numbers from num.txt and filter , odd - even 
+   	if number is odd then save into odd.txt
+   	if number is even then save into even.txt 
+   	
+   final output 
+   
+   content of the number.txt   12 52 65 85 74 89 6 33 5 101 
+   content of the odd.txt      65 85 89 33 5 101 
+   content of the even.txt 	   12 52 74 6 
+    
+----------------------------------------------------------------------------------
+
+data -> 
+
+	Bank
+	Trust 
+	GOV 
+		
+		CustomerName 	ContactNum    City 	 Email    Password 
+		
+	5000 => 
+	
+	class Customer{
+		String customerName;
+		String contactNum;
+		String city;
+		String email;
+		String password; 
+		
+	}	
+	5000 => object 
+	
+	
+	backup -> write ? 
+		
+-----------------------------------------------------
+
+serialization => writing state of instance into the file 
+				    --variable 
+
+-----------------------------------------------------
+
+java-------------------->file {write}{out} 
+java<---------------------file {read}{in} 
+
+
+
+network 
+byte 
+FileOutputStream -> write 
+FileInputStream  -> read 
+
+character 
+FileWriter ->   write 
+FileReader ->  	read 
+				    
+				    
+				    
+object ---> file --> write 
+serialization -> data -> byte -> file 
+				    
+----------------------------------------------------------------------
+nio 
+	Files 
+	Path 
+	Paths 
+	
+	nio -> directory -> file /folder print count 
+	
+	
+	
+	
+	
+Generic : 2 hour
+Collection : 3+2 hours   
+Inner class : 1 hour 
+Thread : 3 hour 
+Conc   : 1 hour 
+--------------------------------------------------------
+
+
+  
+		
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				    
+				    
+				    
+				    
+				    
+				    
 
 					
 

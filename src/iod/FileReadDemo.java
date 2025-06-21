@@ -23,7 +23,7 @@ public class FileReadDemo {
 			}
 			System.out.print((char)x);
 		}
-		
-		
+
+		fr.close();
 	}
 }
