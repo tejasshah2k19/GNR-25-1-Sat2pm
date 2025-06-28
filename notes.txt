@@ -1066,8 +1066,51 @@ Thread : 3 hour
 Conc   : 1 hour 
 --------------------------------------------------------
 
+HangMan
 
-  
+
+category 
+
+	food {a,b,c,d,e,f} 
+	country {xx,india,dddd,fff,gggggg}
+	money  {x1,x2,e3,g4}
+	profession {p1,p2,p3,p4} 
+	
+	
+	randomly select category 
+		country 
+			randomly select word 
+			
+	Category : Country 
+	Life: 5 
+	__ __ __ __ __ 
+	z
+	
+	Category : Country 
+	Life: 4 
+	__ __ __ __ __
+	i
+	
+	Category : Country 
+	Life: 4 
+	_i_ __ __ _i_ __
+	
+--------------------------------------------------------------------------------------	
+	 	
+Vector -> 5 String -> endWith -> vowel -> ArrayList store -> Display
+	
+--------------------------------------------------------------------------------------	
+	
+						Set 
+   HashSet								TreeSet 
+   
+   Set {unique,}
+
+
+--------------------------------------------------------------------------------------	
+list set    
+--------------------------------------------------------------------------------------	
+   
 		
 
 
