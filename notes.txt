@@ -1112,6 +1112,12 @@ list set
 --------------------------------------------------------------------------------------	
    
 		
+1) take date of birth  from user and calculate age
+2) print the day of birth : Saturday 
+3) find out on which day : Monday? you will celebrate 50th birthday 
+
+
+--------------------------------------------------------------------------------------	
 
 
 

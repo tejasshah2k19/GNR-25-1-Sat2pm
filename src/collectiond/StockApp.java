@@ -40,6 +40,8 @@ public class StockApp {
 	}
 }
 
+//Comparable vs Comparator
+
 class Stock implements Comparable<Stock> {
 
 	public Stock(String name, Float price) {
@@ -54,11 +56,14 @@ class Stock implements Comparable<Stock> {
 		return name + "-" + price;
 	}
 
+	//1 first > 
+	//0 both are same 
+	//-1 second > 
 	public int compareTo(Stock o) {
 		if (this.price > o.price) {
-			return 1;
-		} else if (this.price < o.price) {
 			return -1;
+		} else if (this.price < o.price) {
+			return 1;
 		} else {
 			return 0;
 		}
