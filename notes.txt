@@ -1119,10 +1119,20 @@ list set
 
 --------------------------------------------------------------------------------------	
 
+thread -> 1) extends Thread 
+		  2) implements Runnable 
+		  
+		  class Copy extends Thread{
+		  	public void run(){}
+		  }
 
+		  class Copy implements Runnable{
+				public void run(){}
+		  }
 
+--------------------------------------------------------
 
-
+thread -> 1 to 100 -> sum -> print -> main -> 
 
 
 
